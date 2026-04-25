@@ -6,7 +6,6 @@
   <title>Кирилл и Елизавета | Приглашение на свадьбу</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Оставляем оба шрифта в подгрузке на случай, если где-то в будущем понадобится, но в стилях используем только Cormorant -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     * {
@@ -23,7 +22,6 @@
       height: 100vh;
       height: 100dvh;
       overflow: hidden;
-      /* Базовый шрифт везде Cormorant Garamond */
       font-family: 'Cormorant Garamond', Georgia, serif;
       -webkit-tap-highlight-color: transparent;
       -webkit-overflow-scrolling: touch;
@@ -70,7 +68,6 @@
       opacity: 0.85;
       font-weight: 400;
       text-transform: uppercase;
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       animation: fadeInDown 1s ease forwards;
     }
@@ -117,7 +114,6 @@
       letter-spacing: 3px;
       color: rgba(255, 255, 255, 0.9);
       text-transform: uppercase;
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
     }
     .slider-button {
@@ -198,7 +194,6 @@
       flex-shrink: 0;
     }
     .hero-names {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 36px;
       text-align: center;
@@ -250,7 +245,6 @@
       text-transform: uppercase;
     }
     .invite-title {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 64px;
       line-height: 0.9;
@@ -282,7 +276,6 @@
       max-width: 320px;
     }
     .calendar-month {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       text-transform: uppercase;
       letter-spacing: 6px;
@@ -299,7 +292,6 @@
       text-align: center;
     }
     .day-name {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 13px;
       font-weight: 700;
@@ -352,7 +344,6 @@
       text-transform: uppercase;
     }
     .location-title {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 72px;
       line-height: 0.9;
@@ -367,7 +358,6 @@
       text-align: left;
     }
     .venue-name {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-weight: 700;
       font-size: 20px;
@@ -418,7 +408,6 @@
       text-transform: uppercase;
     }
     .timing-title {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 64px;
       line-height: 0.9;
@@ -441,7 +430,6 @@
       padding-bottom: 10px;
     }
     .time-value {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 26px;
       font-weight: 700;
@@ -456,7 +444,7 @@
       font-style: italic;
     }
 
-    /* ----- АНКЕТА ГОСТЯ (Адаптивность улучшена) ----- */
+    /* ----- АНКЕТА ГОСТЯ ----- */
     .inv-form {
       background-color: #FFFFFF;
       color: #000000;
@@ -480,7 +468,6 @@
       text-transform: uppercase;
     }
     .form-title {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 58px;
       line-height: 0.9;
@@ -589,7 +576,6 @@
       background: #1E1E1E;
       color: #EAE3D9;
       border: none;
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 22px;
       font-weight: 700;
@@ -615,7 +601,6 @@
       align-items: center;
     }
     .countdown-title {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 26px;
       font-weight: 700;
@@ -638,7 +623,6 @@
       gap: 4px;
     }
     .countdown-number {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 52px;
       font-weight: 700;
@@ -653,7 +637,6 @@
       font-style: italic;
     }
     .countdown-separator {
-      /* Было: font-family: 'Playfair Display', serif; */
       font-family: 'Cormorant Garamond', serif;
       font-size: 40px;
       font-weight: 300;
@@ -663,7 +646,6 @@
       line-height: 1;
     }
 
-    /* Медиа-запросы для адаптивности (уменьшены размеры, чтобы на窄屏 влезало) */
     @media (max-width: 400px) {
       .location-title, .timing-title, .invite-title {
         font-size: 54px;
@@ -700,6 +682,7 @@
     <div class="call-screen" id="callScreen">
       <div class="caller-info">
         <div class="caller-subtitle">входящий вызов</div>
+        <!-- ИЗМЕНЕНО: Теперь имена на русском, как и на главной заставке -->
         <div class="caller-name">Кирилл и Елизавета</div>
       </div>
       <div class="slider-container">
@@ -718,7 +701,8 @@
     <div class="invitation-screen" id="invScreen">
       <div class="inv-hero fade-in-element">
         <div>
-          <div class="hero-names">KIRILL & ELIZAVETA</div>
+          <!-- ИЗМЕНЕНО: Имена на русском, единообразно со звонком -->
+          <div class="hero-names">КИРИЛЛ И ЕЛИЗАВЕТА</div>
           <div class="hero-date">20.08.2026</div>
         </div>
         <div class="love-text">
@@ -776,7 +760,7 @@
         </div>
       </div>
 
-      <!-- АНКЕТА ГОСТЯ: все чекбоксы пустые (атрибут checked удален) -->
+      <!-- АНКЕТА ГОСТЯ -->
       <div class="inv-form fade-in-element">
         <div class="form-header">
           <span class="form-tag">[Анкета гостя]</span>
@@ -791,7 +775,6 @@
         <div class="form-group">
           <label class="form-label">Вы планируете присутствовать?</label>
           <div class="radio-group">
-            <!-- Убрал checked -->
             <label class="radio-option"><input type="radio" name="attendance" value="yes"> Да, с радостью</label>
             <label class="radio-option"><input type="radio" name="attendance" value="no"> К сожалению, нет</label>
           </div>
@@ -801,7 +784,6 @@
           <label class="form-label">Количество гостей (включая вас)</label>
           <select class="form-select" name="guestCount">
             <option value="1">1</option>
-            <!-- Убрал selected, чтобы по умолчанию показывало 1 -->
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -811,7 +793,6 @@
         <div class="form-group">
           <label class="form-label">Нужен ли вам трансфер?</label>
           <div class="radio-group">
-            <!-- Убрал checked -->
             <label class="radio-option"><input type="radio" name="transfer" value="yes"> Да</label>
             <label class="radio-option"><input type="radio" name="transfer" value="no"> Нет</label>
           </div>
@@ -820,7 +801,6 @@
         <div class="form-group">
           <label class="form-label">Предпочтения по напиткам</label>
           <div class="radio-group">
-            <!-- Убрал checked -->
             <label class="radio-option"><input type="radio" name="drink" value="wine"> Вино</label>
             <label class="radio-option"><input type="radio" name="drink" value="champagne"> Шампанское</label>
             <label class="radio-option"><input type="radio" name="drink" value="soft"> Безалкогольное</label>
